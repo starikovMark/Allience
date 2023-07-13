@@ -27,17 +27,19 @@ body {
     position: fixed;
     z-index: 2;
     width: 100%;
-    transition: 0.3s;
+    transition: background-color 0.2s, height 0.2s;
 }
 .navbar-light {
     background-color: #FAFBFC;
     color: #292D33;
+    height: 74px;
+    border: none;
 }
-.navbar-light .navbar-logo-path {
-    fill: #292D33;
-}
+
 .navbar-logo {
-    padding: 25px 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
     border-right: 1px solid rgba(235, 235, 240, 0.20);
     height: 100%;
 }
