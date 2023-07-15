@@ -328,6 +328,7 @@ html {
         width: 100%;
         height: 1px;
         background-color: #fff;
+        transition: transform 0.3s;
     }
     .navbar-menu-line:nth-child(2) {
         width: 80%;
@@ -425,5 +426,14 @@ html {
         line-height: 160%;
         color: #292D33;
         text-decoration: none;
+    }
+    .close-menu .navbar-menu-line:nth-child(2)  {
+        display: none;
+    }
+    .close-menu .navbar-menu-line:nth-child(1)  {
+        transform: rotate(45deg) translate(5px, 4px);
+    }
+    .close-menu .navbar-menu-line:nth-child(3)  {
+        transform: rotate(-45deg) translate(4px, -3px);;
     }
 }
