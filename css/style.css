@@ -21,6 +21,9 @@ html {
     color: #fff;
     min-height: 100vh;
 }
+.navbar-mobile {
+    display: none;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -39,7 +42,7 @@ html {
     background-color: #FAFBFC;
     color: #292D33;
     height: 4.625rem;
-    border: none;
+    border-bottom: 1px solid #EBEBF0;
 }
 .logo-svg {
     width: 8.75rem;
@@ -51,6 +54,9 @@ html {
     padding: 0px 3.125rem;
     border-right: 1px solid rgba(235, 235, 240, 0.20);
     height: 100%;
+}
+.navbar-light .navbar-logo {
+    border-right: 1px solid #EBEBF0;
 }
 .navbar-menu {
     list-style: none;
@@ -302,6 +308,9 @@ html {
         justify-content: center;
         border-right: none;
     }
+    .navbar-light .navbar-logo {
+        border-right: none;
+    }
     .navbar-menu-toggle {
         width: 5rem;
         height: 100%;
@@ -310,6 +319,9 @@ html {
         justify-content: space-between;
         padding: 2rem 1.6875rem;
         border-right: 1px solid rgba(235, 235, 240, 0.20);
+    }
+    .navbar-light .navbar-menu-toggle {
+        border-right: 1px solid #EBEBF0;
     }
     .navbar-menu-line {
         content: "";
@@ -332,5 +344,86 @@ html {
     }
     .navbar-button {
         padding: 1.5625rem;
+    }
+    .navbar-mobile {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: auto;
+        background-color: #FAFBFC;
+        z-index: 2;
+        padding-top: 5rem;
+    }
+    .navbar-mobile.is-open {
+        display: block;
+    }
+    .navbar-mobile-menu {
+        margin-top: 1.5rem;
+        padding: 0;
+        padding-left: 1.5625rem;
+        list-style: none;
+    }
+    .navbar-mobile-item {
+        margin-bottom: 1.5rem;
+    }
+    .navbar-mobile-link {
+        font-size: .875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%;
+        text-decoration: none;
+        color: #292D33;
+    }
+    .navbar-mobile-subtitle {
+        margin-top: 20px;
+        padding: 0;
+        padding-left: 2.1875rem;
+        list-style: none;
+    }
+    .navbar-mobile-subtitle-item:not(:last-child) {
+        margin-bottom: .625rem;
+    }
+    .navbar-mobile-subtitle-link {
+        text-decoration: none;
+        color: #828A99;
+        font-size: .875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+    }
+    .navbar-mobile-info {
+        border-top: 1px solid #EBEBF0;
+        padding-left: 1.5625rem;
+        padding-top: 1.25rem;
+    }
+    .navbar-mobile-phone {
+        text-decoration: none;
+        color: #292D33;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+        text-decoration-line: underline;
+    }
+    .navbar-mobile-info-list {
+        list-style: none;
+        padding: 0;
+    }
+    .navbar-mobile-info-item {
+        display: flex;
+        align-items: center;
+        gap: .625rem;
+    }
+    .navbar-mobile-text {
+        font-size: .875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        color: #292D33;
+        text-decoration: none;
     }
 }
