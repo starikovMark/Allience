@@ -31,3 +31,29 @@ mMenuToggle.addEventListener("click", (event) => { // Функция при кл
     event.preventDefault(); // Отключаем переход по ссылке для кнопки меню
     menu.classList.contains("is-open") ? closeMenu() : openMenu(); // если меню содержит класс is-open, выполняется функция закрытия меню, в противном случае меню открывается.
 });
+const swiper = new Swiper('.swiper', {
+    autoHeight: true,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.slider-button-next',
+      prevEl: '.slider-button-prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        588: {
+          slidesPerView: 2,
+          centeredSlides: true,
+        },
+        // when window width is >= 480px
+        788: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 640px
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 5,
+        }
+      }
+  });
