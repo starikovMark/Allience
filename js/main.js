@@ -57,3 +57,28 @@ const swiper = new Swiper('.swiper', {
         }
       }
   });
+  const swiperScheme = new Swiper('.swiper-scheme', {
+    autoHeight: true,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.slider-button-primary-next',
+      prevEl: '.slider-button-primary-prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        588: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 480px
+        788: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 640px
+        992: {
+          slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 4,
+        }
+      }
+  });
