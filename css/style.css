@@ -47,6 +47,9 @@ html {
     width: 8.75rem;
     height: 2.75rem;
 }
+.logo {
+    display: none;
+}
 .navbar-logo {
     display: flex;
     align-items: center;

@@ -1,5 +1,6 @@
 const navbar = document.querySelector(".navbar");
-const logo = document.querySelector(".logo-svg use");
+const logo = document.querySelector(".logo");
+const logoLight = document.querySelector(".logo-light");
 const mMenuToggle = document.querySelector(".navbar-menu-toggle");
 const menu = document.querySelector(".navbar-mobile");
 
@@ -17,11 +18,13 @@ const closeMenu = (event) => { // Функция закрытия меню
 };
 const navbarLight = (event) => {
     navbar.classList.add("navbar-light");
-    logo.href.baseVal = "img/svg/sprites.svg#logo";
+    logo.style.display = "block";
+    logoLight.style.display = "none";
 };
 const navbarDark = (event) => {
     navbar.classList.remove("navbar-light");
-    logo.href.baseVal = "img/svg/sprites.svg#logo-light";
+    logoLight.style.display = "block";
+    logo.style.display = "none";
 }
 
 window.addEventListener('scroll', () => { // Добавляем к окну слушателя, при скроле страницы выполняем фукцию
