@@ -345,7 +345,22 @@ html {
     bottom: 0;
     right: 0;
 }
-
+.product {
+    display: flex;
+    padding: 3.125rem;
+    flex-basis: 50%;
+}
+.product-text {
+    max-width: 24.375rem;
+    margin-left: 3.125rem;
+}
+.product-image {
+    fill: #828A99;
+    transition: fill 0.2s;
+}
+.product:hover .product-image {
+    fill: #5C8EE5;
+}
 @media (max-width: 1700px) {
     html {
         font-size: 14px;
@@ -397,6 +412,9 @@ html {
     .card {
         flex-basis: 50%;
     }
+    .product-text {
+    width: 100%;
+}
 }
 @media (max-width: 1026px) {
     .navbar {
@@ -548,6 +566,9 @@ html {
     }
     .navbar-mobile-social-link {
         text-decoration: none;
+    }
+    .product {
+        flex-basis: 100%;
     }
 }
 @media (max-width: 788px) {
