@@ -279,7 +279,7 @@ html {
     font-weight: 400;
     line-height: 160%;
 }
-.steps-link {
+.button-link {
     text-decoration: none;
     color:  #5C8EE5;
     font-size: 1rem;
@@ -291,7 +291,7 @@ html {
     margin-top: 1.25rem;
     max-width: 15rem;
 }
-.steps-link:before {
+.button-link:before {
     content: "";
     width: 2.5rem;
     height: 1px;
@@ -299,7 +299,7 @@ html {
     margin-right: 1.25rem;
     transition: width 0.2s;
 }
-.steps-link:hover::before {
+.button-link:hover::before {
     width: 3.75rem;
 }
 .cards {
@@ -358,6 +358,30 @@ html {
 .product:hover .product-image {
     fill: #5C8EE5;
 }
+.founder {
+    position: relative;
+}
+.founder-image {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    min-height: 41.25rem;
+    object-fit: cover;
+}
+.founder-content {
+    max-width: 45rem;
+}
+.founder-content-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.founder-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+}
 @media (max-width: 1700px) {
     html {
         font-size: 14px;
@@ -411,7 +435,10 @@ html {
     }
     .product-text {
     width: 100%;
-}
+    }
+    .founder-content {
+    max-width: 35rem;
+    }
 }
 @media (max-width: 1026px) {
     .navbar {
@@ -567,6 +594,20 @@ html {
     .product {
         flex-basis: 100%;
     }
+    .founder-image {
+        position: relative;
+        width: 100%;
+        min-height: 18.75rem;
+        object-fit: cover;
+        margin-bottom: 3.125rem;
+    }
+    .founder-content-wrapper {
+        justify-content: start;
+    }
+    .founder-content {
+        max-width: 100%;
+    }
+    
 }
 @media (max-width: 788px) {
     .container {
