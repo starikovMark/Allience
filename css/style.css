@@ -349,10 +349,7 @@ html {
     display: flex;
     padding: 3.125rem;
     flex-basis: 50%;
-}
-.product-text {
-    max-width: 24.375rem;
-    margin-left: 3.125rem;
+    gap: 3.125rem;
 }
 .product-image {
     fill: #828A99;
@@ -597,5 +594,12 @@ html {
 @media (max-width: 588px) {
     .container {
         max-width: 90%;
+    }
+}
+@media (max-width: 400px) {
+    .product {
+        flex-direction: column;
+        gap: 0;
+        padding: 1.875rem;
     }
 }
