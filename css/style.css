@@ -485,6 +485,112 @@ html {
     align-items: center;
     justify-content: space-between;
 }
+.bg-grey {
+    background-color: #F0F2F5;
+}
+.section-cta {
+    position: relative;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+}
+.cta-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 45rem;
+    width: 50%;
+}
+.cta-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.cta-form {
+    max-width: 52.5rem;
+}
+.cta-form-title {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+.cta-form-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+}
+.input-group-wrapper {
+    display: flex;
+    gap: 1.875rem;
+}
+.input-group {
+    position: relative;
+    height: 4.125rem;
+    flex-grow: 1;
+}
+.input-group-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem 1.775rem;
+    background-color: #F0F2F5;
+    border: 1px solid #E4E4EB;
+    outline: none;
+    transition: border 0.2s;
+}
+.input-group-label {
+    position: absolute;
+    cursor: text;
+    left: 1.75rem;
+    top: 1.3125rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+    transition: 0.2s;
+}
+.input-group-input:focus ~ .input-group-label,
+.input-group-input:not(:placeholder-shown).input-group-input:not(:focus) ~ .input-group-label {
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    left: 1.25rem;
+    top: -0.5rem;
+    padding: 0 .625rem;
+    background-color: #F0F2F5;
+}
+.input-group-input:focus {
+    border: 1px solid #5C8EE5;
+}
+.cta-form-footer {
+    margin-top: 1.875rem;
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+}
+.cta-form-button {
+    flex-shrink: 0;
+}
+.notify {
+    display: flex;
+    align-items: flex-start;
+    gap: .625rem;
+}
+.notify-icon {
+    flex-shrink: 0;
+}
+.notify-text {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #828A99;
+    margin: 0;
+    max-width: 23.75rem;
+}
 @media (max-width: 1700px) {
     html {
         font-size: 14px;
