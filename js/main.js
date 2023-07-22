@@ -85,3 +85,13 @@ const swiper = new Swiper('.swiper', {
         }
       }
   });
+  const swiperBlog = new Swiper('.slider-blog', {
+    autoHeight: true,
+    speed: 300,
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.primary-buttons-next',
+      prevEl: '.primary-buttons-prev',
+    },
+  });
