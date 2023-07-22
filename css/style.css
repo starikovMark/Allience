@@ -360,12 +360,13 @@ html {
 }
 .founder {
     position: relative;
+    min-height: 41.25rem;
 }
 .founder-image {
     position: absolute;
     left: 0;
     width: 40%;
-    min-height: 41.25rem;
+    height: 100%;
     object-fit: cover;
 }
 .founder-content {
@@ -381,6 +382,54 @@ html {
     font-weight: 400;
     line-height: 160%;
     color: #828A99;
+}
+.clients-content {
+    display: flex;
+    gap: 3.125rem;
+}
+.clients-text-wrapper {
+    flex-basis: 50%;
+}
+.clients-text-list {
+    padding: 0;
+    list-style-type: none;
+    columns: 2 auto;
+}
+.clients-text-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #292D33;
+}
+.clients-text-icon {
+    width: 30px;
+    height: 30px;
+}
+.clients-logo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+.clients-logo-item {
+    flex-basis: 33%;
+    border: 1px solid #EBEBF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.2s;
+    filter: grayscale(100%);
+}
+.clients-logo-image {
+    width: 4.375rem;
+    height: 4.375rem;
+}
+.clients-logo-item:hover {
+    filter: grayscale(0%);
 }
 @media (max-width: 1700px) {
     html {
@@ -438,6 +487,12 @@ html {
     }
     .founder-content {
     max-width: 35rem;
+    }
+    .clients-text-wrapper {
+        flex-basis: 60%;
+    }
+    .clients-logo-wrapper {
+        flex-basis: 40%;
     }
 }
 @media (max-width: 1026px) {
@@ -607,7 +662,12 @@ html {
     .founder-content {
         max-width: 100%;
     }
-    
+    .clients-content {
+        flex-direction: column;
+    }
+    .clients-logo-item {
+        padding: 1rem;
+    }
 }
 @media (max-width: 788px) {
     .container {
@@ -631,10 +691,20 @@ html {
     .card {
         flex-basis: 100%;
     }
+    .clients-content {
+        gap: 2.125rem;
+    }
+    .clients-logo-item {
+        flex-basis: 50%;
+        padding: 2rem;
+    }
 }
 @media (max-width: 588px) {
     .container {
         max-width: 90%;
+    }
+    .clients-text-list {
+        columns: 1;
     }
 }
 @media (max-width: 400px) {
