@@ -88,10 +88,20 @@ const swiper = new Swiper('.swiper', {
   const swiperBlog = new Swiper('.slider-blog', {
     autoHeight: true,
     speed: 300,
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
+    autoplay: {
+      delay: 5000,
+    },
     navigation: {
       nextEl: '.primary-buttons-next',
       prevEl: '.primary-buttons-prev',
     },
+    breakpoints: {
+
+      788: {
+        slidesPerView: 2,
+      },
+
+    }
   });
