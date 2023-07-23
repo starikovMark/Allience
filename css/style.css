@@ -117,7 +117,7 @@ html {
     font-size: 1rem;
     line-height: 160%;
     color: #fff;
-    background: #3A71D1;
+    background: #5C8EE5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,6 +126,10 @@ html {
     border: none;
     flex-shrink: 0;
     cursor: pointer;
+    transition: background-color 0.2s;
+}
+.button:hover {
+    background-color: #3A71D1;
 }
 .phone-icon {
     display: none;
@@ -454,6 +458,10 @@ html {
     height: 100%;
     z-index: -1;
     background: rgba(41, 45, 51, 0.60);
+    transition: background 0.2s;
+}
+.blog-card:hover:before {
+    background: rgba(41, 45, 51, 0.80);
 }
 .blog-card-image {
     position: absolute;
