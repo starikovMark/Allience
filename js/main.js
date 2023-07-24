@@ -5,6 +5,7 @@ const mMenuToggle = document.querySelector(".navbar-menu-toggle");
 const menu = document.querySelector(".navbar-mobile");
 const modal = document.querySelector(".modal");
 const modalDialog = document.querySelector(".modal.dialog");
+const isFront = document.body.classList.contains("front-page");
 
 const openMenu = (event) => { // Стрелочная функция открывания меню
     menu.classList.add("is-open"); // Добавляем класс к меню
@@ -20,16 +21,18 @@ const closeMenu = (event) => { // Функция закрытия меню
 };
 const navbarLight = (event) => {
     navbar.classList.add("navbar-light");
-    logo.style.display = "block";
-    logoLight.style.display = "none";
 };
 const navbarDark = (event) => {
     navbar.classList.remove("navbar-light");
-    logoLight.style.display = "block";
-    logo.style.display = "none";
-}
+};
+const changeNavHeight = (height) => {
+  navbar.style.height = height;
+};
 window.addEventListener('scroll', () => { // Добавляем к окну слушателя, при скроле страницы выполняем фукцию
-    this.scrollY > 1 ? navbarLight() : navbarDark(); // Если страница покручивается на 1 пиксель, включается светлая шапка, в противном случае темная шапка 
+    this.scrollY > 1 ? changeNavHeight("4.5rem") : changeNavHeight("5.875rem");    // Если страница покручивается на 1 пиксель, включается светлая шапка, в противном случае темная шапка 
+    if (isFront) {
+      this.scrollY > 1 ? navbarLight() : navbarDark();
+    }
 });
 mMenuToggle.addEventListener("click", (event) => { // Функция при клике на кнопку меню
     event.preventDefault(); // Отключаем переход по ссылке для кнопки меню
