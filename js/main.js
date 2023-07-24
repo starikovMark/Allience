@@ -3,6 +3,8 @@ const logo = document.querySelector(".logo");
 const logoLight = document.querySelector(".logo-light");
 const mMenuToggle = document.querySelector(".navbar-menu-toggle");
 const menu = document.querySelector(".navbar-mobile");
+const modal = document.querySelector(".modal");
+const modalDialog = document.querySelector(".modal.dialog");
 
 const openMenu = (event) => { // Стрелочная функция открывания меню
     menu.classList.add("is-open"); // Добавляем класс к меню
@@ -26,13 +28,28 @@ const navbarDark = (event) => {
     logoLight.style.display = "block";
     logo.style.display = "none";
 }
-
 window.addEventListener('scroll', () => { // Добавляем к окну слушателя, при скроле страницы выполняем фукцию
     this.scrollY > 1 ? navbarLight() : navbarDark(); // Если страница покручивается на 1 пиксель, включается светлая шапка, в противном случае темная шапка 
 });
 mMenuToggle.addEventListener("click", (event) => { // Функция при клике на кнопку меню
     event.preventDefault(); // Отключаем переход по ссылке для кнопки меню
     menu.classList.contains("is-open") ? closeMenu() : openMenu(); // если меню содержит класс is-open, выполняется функция закрытия меню, в противном случае меню открывается.
+});
+document.addEventListener("click", (event) => {
+  if (
+    event.target.dataset.toggle == "modal" ||
+    event.target.parentNode.dataset.toggle == "modal" ||
+    (!event.composedPath().includes(modalDialog) &&
+      modal.classList.contains("is-open"))
+  ) {
+    event.preventDefault();
+    modal.classList.toggle("is-open");
+  }
+});
+document.addEventListener("keyup", (event) => {
+  if (event.key == "Escape" && modal.classList.contains("is-open")) {
+    modal.classList.toggle("is-open");
+  }
 });
 const swiper = new Swiper('.swiper', {
     autoHeight: true,

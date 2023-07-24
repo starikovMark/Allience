@@ -158,7 +158,7 @@
             >+7 (499) 686-10-14</a
           >
         </div>
-        <button class="navbar-button button">
+        <button class="navbar-button button" data-toggle="modal">
           <span class="navbar-button-link">
             <svg class="navbar-phone-image phone-icon" width="24" height="24">
               <use href="img/svg/sprites.svg#phone"></use>
@@ -441,7 +441,9 @@
               выбранный нами инновационный путь в значительной степени
               обусловливает важность дальнейших направлений развития.
             </p>
-            <a href="#" class="button-link">Оставь заявку</a>
+            <a href="#" class="button-link" data-toggle="modal"
+              >Оставь заявку</a
+            >
           </div>
           <!-- /.founder-content -->
         </div>
@@ -460,53 +462,63 @@
             <ul class="clients-text-list">
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#him"></use></svg
-                >Химические производства
+                  <use href="img/svg/sprites.svg#him"></use>
+                </svg>
+                Химические производства
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#wash-auto"></use></svg
-                >Автомойки
+                  <use href="img/svg/sprites.svg#wash-auto"></use>
+                </svg>
+                Автомойки
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#eat-product"></use></svg
-                >Пищевая продукция
+                  <use href="img/svg/sprites.svg#eat-product"></use>
+                </svg>
+                Пищевая продукция
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#paint"></use></svg
-                >Лаки и краски
+                  <use href="img/svg/sprites.svg#paint"></use>
+                </svg>
+                Лаки и краски
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#hand"></use></svg
-                >Косметические средства
+                  <use href="img/svg/sprites.svg#hand"></use>
+                </svg>
+                Косметические средства
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#cosmetic"></use></svg
-                >Автомобильная косметика
+                  <use href="img/svg/sprites.svg#cosmetic"></use>
+                </svg>
+                Автомобильная косметика
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#cosmetic-cloth"></use></svg
-                >Косметика по уходу за одеждой
+                  <use href="img/svg/sprites.svg#cosmetic-cloth"></use>
+                </svg>
+                Косметика по уходу за одеждой
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#cosmetic-shoes"></use></svg
-                >Косметика по уходу за обувью
+                  <use href="img/svg/sprites.svg#cosmetic-shoes"></use>
+                </svg>
+                Косметика по уходу за обувью
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#material"></use></svg
-                >Строительные материалы
+                  <use href="img/svg/sprites.svg#material"></use>
+                </svg>
+                Строительные материалы
               </li>
               <li class="clients-text-item">
                 <svg class="clients-text-icon">
-                  <use href="img/svg/sprites.svg#more"></use></svg
-                >И многих других
+                  <use href="img/svg/sprites.svg#more"></use>
+                </svg>
+                И многих других
               </li>
             </ul>
           </div>
@@ -842,6 +854,67 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <div class="modal">
+      <div class="modal-dialog">
+        <form action="#" class="cta-form modal-form">
+          <h2 class="cta-form-title modal-title">Есть вопросы?</h2>
+          <a href="#" class="modal-button" data-toggle="modal">
+            <svg class="modal-button-icon" width="24" height="24">
+              <use href="img/svg/sprites.svg#close"></use>
+            </svg>
+          </a>
+          <p class="cta-form-text modal-text">
+            Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
+            ответит на все интересующие вопросы и поможем даже в самых сложных
+            случаях!
+          </p>
+          <div class="input-group-wrapper modal-group-input-wrapper">
+            <div class="input-group modal-input-group">
+              <input
+                type="text"
+                id="modal_user_name"
+                class="input-group-input"
+                placeholder=" "
+              />
+              <label
+                for="modal_user_name"
+                class="input-group-label modal-input-label"
+                >Имя</label
+              >
+            </div>
+            <div class="input-group modal-input-group">
+              <input
+                type="tel"
+                id="modal_user_phone"
+                class="input-group-input"
+                placeholder=" "
+              />
+              <label
+                for="modal_user_phone"
+                class="input-group-label modal-input-label"
+                >Номер телефона</label
+              >
+            </div>
+          </div>
+          <!-- /.input-group-wrapper -->
+          <div class="modal-form-footer">
+            <button class="button modal-form-button">Отправить заявку</button>
+            <div class="notify">
+              <svg class="notify-icon" width="14" height="14">
+                <use href="img/svg/sprites.svg#shield"></use>
+              </svg>
+              <p class="notify-text">
+                Обращаясь к нам вы получаете не только профессиональную работу,
+                но и абсолютную конфиденциальность информации!
+              </p>
+            </div>
+          </div>
+        </form>
+        <!-- /.modal-form-footer -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
