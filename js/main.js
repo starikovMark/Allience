@@ -4,7 +4,7 @@ const logoLight = document.querySelector(".logo-light");
 const mMenuToggle = document.querySelector(".navbar-menu-toggle");
 const menu = document.querySelector(".navbar-mobile");
 const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal.dialog");
+const modalDialog = document.querySelector(".modal-dialog");
 const isFront = document.body.classList.contains("front-page");
 
 const openMenu = (event) => { // Стрелочная функция открывания меню
@@ -125,3 +125,44 @@ const swiper = new Swiper('.swiper', {
 
     }
   });
+
+const forms = document.querySelectorAll("form"); // достаем формы
+forms.forEach((form) => {
+  const validator = new JustValidate(form, {
+    errorFieldCssClass: "is-invalid",
+  });
+  validator
+  .addField("[name=username]", [
+    {
+      rule: 'required',
+      errorMessage: "Укажите имя",
+    },
+    {
+      rule: 'minLength',
+      value: 2,
+      errorMessage: "Минимально 2 символа",
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: "Максимально 30 символов",
+    },
+  ])
+  .addField("[name=userphone]", [
+    {
+      rule: 'required',
+      mask: '+7(000)000-00-00',
+      errorMessage: "Укажите телефон",
+    },
+  ])
+  .onSuccess((event) => {
+    console.log(event.target.getAttribute("method"));
+  })
+});
+
+IMask(
+  document.getElementById('user_phone'),
+  {
+    mask: '+{7} (000) 000-00-00',
+  }
+);

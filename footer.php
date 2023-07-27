@@ -6,7 +6,7 @@
           class="cta-image"
         />
         <div class="cta-wrapper container">
-          <form action="#" class="cta-form">
+          <form action="handler.php" method="POST" class="cta-form">
             <h2 class="cta-form-title section-title">Хотите сотрудничать?</h2>
             <p class="cta-form-text">
               Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
@@ -18,7 +18,8 @@
                 <input
                   type="text"
                   id="user_name"
-                  class="input-group-input"
+                  name="username"
+                  class="input"
                   placeholder=" "
                 />
                 <label for="user_name" class="input-group-label">Имя</label>
@@ -27,7 +28,8 @@
                 <input
                   type="tel"
                   id="user_phone"
-                  class="input-group-input"
+                  name="userphone"
+                  class="input"
                   placeholder=" "
                 />
                 <label for="user_phone" class="input-group-label"
@@ -187,7 +189,7 @@
     <!-- /.footer -->
     <div class="modal">
       <div class="modal-dialog">
-        <form action="#" class="cta-form modal-form">
+        <form action="handler.php" method="POST" class="cta-form modal-form">
           <h2 class="cta-form-title modal-title">Есть вопросы?</h2>
           <a href="#" class="modal-button" data-toggle="modal">
             <svg class="modal-button-icon" width="24" height="24">
@@ -204,7 +206,8 @@
               <input
                 type="text"
                 id="modal_user_name"
-                class="input-group-input"
+                name="username"
+                class="input"
                 placeholder=" "
               />
               <label
@@ -217,7 +220,8 @@
               <input
                 type="tel"
                 id="modal_user_phone"
-                class="input-group-input"
+                name="userphone"
+                class="input"
                 placeholder=" "
               />
               <label
@@ -247,6 +251,8 @@
     </div>
     <!-- /.modal -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
+    <script src="js/imask.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

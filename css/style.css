@@ -544,7 +544,7 @@ html {
     flex-grow: 1;
     background-color: #F0F2F5;
 }
-.input-group-input {
+.input {
     position: absolute;
     left: 0;
     top: 0;
@@ -569,8 +569,8 @@ html {
     transition: 0.2s;
     background-color: inherit;
 }
-.input-group-input:focus ~ .input-group-label,
-.input-group-input:not(:placeholder-shown).input-group-input:not(:focus) ~ .input-group-label {
+.input:focus ~ .input-group-label,
+.input:not(:placeholder-shown).input:not(:focus) ~ .input-group-label {
     font-size: .625rem;
     font-style: normal;
     font-weight: 400;
@@ -580,8 +580,19 @@ html {
     padding: 0 .625rem;
     background-color: inherit;
 }
-.input-group-input:focus {
+.input:focus {
     border: 1px solid #5C8EE5;
+}
+.input.is-invalid {
+    border: 1px solid red;
+}
+.just-validate-error-label {
+    position: absolute; 
+    right: 1.25rem;
+    top: -0.5rem;
+    font-size: 0.8rem;
+    background-color: inherit;
+    padding: 0 .625rem;
 }
 .cta-form-footer {
     margin-top: 1.875rem;
