@@ -187,11 +187,11 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-    <div class="modal">
+    <div class="modal" id="feedback-modal">
       <div class="modal-dialog">
         <form action="handler.php" method="POST" class="cta-form modal-form">
           <h2 class="cta-form-title modal-title">Есть вопросы?</h2>
-          <a href="#" class="modal-button" data-toggle="modal">
+          <a href="#" class="modal-button" data-toggle="modal" data-target="#feedback-modal">
             <svg class="modal-button-icon" width="24" height="24">
               <use href="img/svg/sprites.svg#close"></use>
             </svg>
@@ -233,7 +233,7 @@
           </div>
           <!-- /.input-group-wrapper -->
           <div class="modal-form-footer">
-            <button class="button modal-form-button" data-toggle="modal-thx">Отправить заявку</button>
+            <button class="button modal-form-button">Отправить заявку</button>
             <div class="notify">
               <svg class="notify-icon" width="14" height="14">
                 <use href="img/svg/sprites.svg#shield"></use>
@@ -250,19 +250,19 @@
       <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
-    <div class="modal modal-thx">
+    <div class="modal modal-thx" id="alert-modal">
         <div class="modal-dialog modal-dialog-thx">
           <svg class="modal-image">
             <use href="img/svg/sprites.svg#thank-you"></use>
           </svg>
-          <a href="#" class="modal-button" data-toggle="modal-thx">
+          <a href="#" class="modal-button" data-toggle="modal" data-target="#alert-modal">
             <svg class="modal-button-icon" width="24" height="24">
               <use href="img/svg/sprites.svg#close"></use>
             </svg>
           </a>
           <h2 class="cta-form-title modal-title modal-thx-title">Спасибо за заявку!</h2>
           <p class="modal-thx-text">Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!</p>
-          <a href="#" class="button modal-thx-button" data-toggle="modal-thx">Вернуться на главную</a>
+          <button class="button modal-form-button modal-thx-button" data-toggle="modal" data-target="#alert-modal">Вернуться на главную</button>
         </div>
       <!-- /.modal-dialog-thx -->
     </div>

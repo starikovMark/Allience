@@ -3,11 +3,11 @@ const logo = document.querySelector(".logo");
 const logoLight = document.querySelector(".logo-light");
 const mMenuToggle = document.querySelector(".navbar-menu-toggle");
 const menu = document.querySelector(".navbar-mobile");
-const modal = document.querySelector(".modal");
-const modalDialog = document.querySelector(".modal-dialog");
-const modalThx = document.querySelector(".modal-thx");
-const modalDialogThx = document.querySelector(".modal-dialog-thx");
 const isFront = document.body.classList.contains("front-page");
+const modalButtons = document.querySelectorAll('[data-toggle=modal]');
+let currentModal;
+let modalDialog;
+let alertModal = document.querySelector("#alert-modal");
 
 const openMenu = (event) => { // Стрелочная функция открывания меню
     menu.classList.add("is-open"); // Добавляем класс к меню
@@ -40,36 +40,32 @@ mMenuToggle.addEventListener("click", (event) => { // Функция при кл
     event.preventDefault(); // Отключаем переход по ссылке для кнопки меню
     menu.classList.contains("is-open") ? closeMenu() : openMenu(); // если меню содержит класс is-open, выполняется функция закрытия меню, в противном случае меню открывается.
 });
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalDialog) &&
-      modal.classList.contains("is-open"))
-  ) {
+modalButtons.forEach((button) => {
+   /* клик по переключателю */ /* */
+  button.addEventListener("click", (event) => {
     event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
+    /* Определяем текущее открытое окно*/
+  currentModal = document.querySelector(button.dataset.target);
+  /* Открываем текущее окно*/
+  currentModal.classList.toggle("is-open");
+  /* Назначаем диалоговое окно*/
+  modalDialog = currentModal.querySelector(".modal-dialog");
+  /*отслеживаем клик по окну и пустым областям */
+  currentModal.addEventListener("click", event => {
+    /* если клик в пустую область (не диалог)*/
+    if  (!event.composedPath().includes(modalDialog)) {
+      /*закрываем окно */
+      currentModal.classList.remove("is-open");
+    }
+  });
+  });
 });
+/* отлавливаем событие нажатие на кнопки */
 document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modal.classList.contains("is-open")) {
-    modal.classList.toggle("is-open");
-  }
-});
-document.addEventListener("click", (event) => {
-  if (
-    event.target.dataset.toggle == "modal-thx" ||
-    event.target.parentNode.dataset.toggle == "modal-thx" ||
-    (!event.composedPath().includes(modalDialogThx) &&
-      modalThx.classList.contains("is-open"))
-  ) {
-    event.preventDefault();
-    modalThx.classList.toggle("is-open");
-  }
-});
-document.addEventListener("keyup", (event) => {
-  if (event.key == "Escape" && modalThx.classList.contains("is-open")) {
-    modalThx.classList.toggle("is-open");
+  /* проверяем что это Escape и текущее окно открыто */
+  if (event.key == "Escape" && currentModal.classList.contains("is-open")) {
+    /*Закрывает текущее окно */
+    currentModal.classList.toggle("is-open");
   }
 });
 const swiper = new Swiper('.swiper', {
@@ -174,7 +170,33 @@ forms.forEach((form) => {
     },
   ])
   .onSuccess((event) => {
-    console.log(event.target.getAttribute("method"));
+    const thisForm = event.target;
+    const formData = new FormData(thisForm);
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then((responce) => {
+        if (responce.ok) {
+          thisForm.reset();
+          currentModal.classList.remove("is-open");
+          alertModal.classList.add("is-open");
+          currentModal = alertModal;
+          modalDialog = currentModal.querySelector(".modal-dialog");
+          /*отслеживаем клик по окну и пустым областям */
+          currentModal.addEventListener("click", event => {
+            /* если клик в пустую область (не диалог)*/
+            if  (!event.composedPath().includes(modalDialog)) {
+              /*закрываем окно */
+              currentModal.classList.remove("is-open");
+            }
+          });
+        } else {
+          alert("Ошибка. Текст ошибки: " .responce.statusText);
+        }
+      });
+    };
+    ajaxSend(formData);
   });
 });
 

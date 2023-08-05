@@ -158,7 +158,7 @@
             >+7 (499) 686-10-14</a
           >
         </div>
-        <button class="navbar-button button" data-toggle="modal">
+        <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">
           <span class="navbar-button-link">
             <svg class="navbar-phone-image phone-icon" width="24" height="24">
               <use href="img/svg/sprites.svg#phone"></use>
@@ -180,7 +180,7 @@
             будущего проекта напрямую зависит от анализа существующих паттернов
             поведения.
           </p>
-          <button class="navbar-button button">Получить консультацию</button>
+          <button class="navbar-button button" data-toggle="modal" data-target="#feedback-modal">Подробнее о компании</button>
           <!-- Главный блок слайдера -->
           <div class="swiper">
             <!-- обертка слайдера-->
@@ -286,7 +286,7 @@
               </p>
             </div>
           </div>
-          <a href="#" class="button-link">Оставь заявку</a>
+          <a href="#" class="button-link" data-toggle="modal" data-target="#feedback-modal">Оставь заявку</a>
           <!-- If we need navigation buttons -->
           <div class="slider-buttons-primary primary-buttons-wrapper">
             <div class="slider-button-primary-prev primary-buttons-prev">
@@ -441,7 +441,7 @@
               выбранный нами инновационный путь в значительной степени
               обусловливает важность дальнейших направлений развития.
             </p>
-            <a href="#" class="button-link" data-toggle="modal"
+            <a href="#" class="button-link" data-toggle="modal" data-target="#feedback-modal"
               >Оставь заявку</a
             >
           </div>
