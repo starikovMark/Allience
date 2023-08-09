@@ -22,7 +22,7 @@
             <a href="./about.php" class="navbar-mobile-link">О компании</a>
           </li>
           <li class="navbar-mobile-item">
-            <a href="#" class="navbar-mobile-link">Контрактное производство</a>
+            <a href="./contracts.php" class="navbar-mobile-link">Контрактное производство</a>
             <ul class="navbar-mobile-subtitle">
               <li class="navbar-mobile-subtitle-item">
                 <a href="#" class="navbar-mobile-subtitle-link">
@@ -138,7 +138,7 @@
             <a href="./about.php" class="navbar-menu-link">О компании</a>
           </li>
           <li class="navbar-menu-item">
-            <a href="#" class="navbar-menu-link">Контрактное производство</a>
+            <a href="./contracts.php" class="navbar-menu-link">Контрактное производство</a>
           </li>
           <li class="navbar-menu-item">
             <a href="#" class="navbar-menu-link">Собственные торговые марки</a>
@@ -341,5 +341,4 @@
       <!-- /.container -->
     </section>
     <!-- /.section blog -->
-    
     <?php include_once("footer.php")?>

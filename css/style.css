@@ -504,6 +504,9 @@ html {
 .bg-grey {
     background-color: #F0F2F5;
 }
+.cta {
+    margin-top: 11.375rem;
+}
 .section-cta {
     position: relative;
     padding-top: 6.25rem;
@@ -837,6 +840,7 @@ html {
     padding-top: 8.4375rem;
     padding-bottom: 3.125rem;
     background-color: #F0F2F5;
+    position: relative;
 }
 .named-primary {
     background-image: url("/img/png/named-bg.jpeg");
@@ -873,12 +877,15 @@ html {
     color: #fff;
 }
 .named-text {
-    z-index: 2;
+    z-index: 1;
 }
 .named-image {
     max-width: 30rem;
     max-height: 15rem;
     object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
 }
 .breadcrumb {
     display: flex;
@@ -898,7 +905,7 @@ html {
     height: 1px;
     background-color: #828A99;
 }
-.breadcrumb-item-link {
+.named .breadcrumb-item-link {
     text-decoration: none;
     color: #828A99;
     font-size: .875rem;
@@ -906,11 +913,17 @@ html {
     font-weight: 400;
     line-height: 160%;
 }
-.breadcrumb-item-link-active {
+.named .breadcrumb-item-link-active {
     color: #292D33;
 }
-.breadcrumb-item-light {
+.named-primary .breadcrumb-item-link-active{
     color: #fff;
+}
+.named-primary .breadcrumb-item-link {
+    color: #fff;
+}
+.named-primary .breadcrumb-item:after {
+    background-color: #fff;
 }
 @media (max-width: 1700px) {
     html {
@@ -1180,6 +1193,9 @@ html {
         flex-direction: column;
         gap: .75rem;
         margin-bottom: 1.25rem;
+    }
+    .named-image {
+        display: none;
     }
 }
 @media (max-width: 788px) {
