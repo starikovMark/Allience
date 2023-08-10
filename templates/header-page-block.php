@@ -18,13 +18,13 @@
     <div class="navbar-mobile">
       <ul class="navbar-mobile-menu">
         <li class="navbar-mobile-item">
-          <a href="about.html" class="navbar-mobile-link"><?php echo $page_title?></a>
+          <a href="./about.php" class="navbar-mobile-link">О компании</a>
         </li>
         <li class="navbar-mobile-item">
           <a href="./contracts.php" class="navbar-mobile-link">Контрактное производство</a>
           <ul class="navbar-mobile-subtitle">
             <li class="navbar-mobile-subtitle-item">
-              <a href="#" class="navbar-mobile-subtitle-link">
+              <a href="./auto-him.php" class="navbar-mobile-subtitle-link">
                 Автомобильная химия
               </a>
             </li>
@@ -56,7 +56,7 @@
           </ul>
         </li>
         <li class="navbar-mobile-item">
-          <a href="#" class="navbar-mobile-link">Собственные торговые марки</a>
+          <a href="./marks.php" class="navbar-mobile-link">Собственные торговые марки</a>
           <ul class="navbar-mobile-subtitle">
             <li class="navbar-mobile-subtitle-item">
               <a href="#" class="navbar-mobile-subtitle-link">
@@ -134,7 +134,7 @@
           <a href="./contracts.php" class="navbar-menu-link">Контрактное производство</a>
         </li>
         <li class="navbar-menu-item">
-          <a href="#" class="navbar-menu-link">Собственные торговые марки</a>
+          <a href="./marks.php" class="navbar-menu-link">Собственные торговые марки</a>
         </li>
         <li class="navbar-menu-item">
           <a href="#" class="navbar-menu-link">Новости</a>

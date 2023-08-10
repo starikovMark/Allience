@@ -57,7 +57,7 @@
             </ul>
           </li>
           <li class="navbar-mobile-item">
-            <a href="#" class="navbar-mobile-link"
+            <a href="./marks.php" class="navbar-mobile-link"
               >Собственные торговые марки</a
             >
             <ul class="navbar-mobile-subtitle">
@@ -141,7 +141,7 @@
             <a href="./contracts.php" class="navbar-menu-link">Контрактное производство</a>
           </li>
           <li class="navbar-menu-item">
-            <a href="#" class="navbar-menu-link">Собственные торговые марки</a>
+            <a href="./marks.php" class="navbar-menu-link">Собственные торговые марки</a>
           </li>
           <li class="navbar-menu-item">
             <a href="#" class="navbar-menu-link">Новости</a>
@@ -246,7 +246,9 @@
     </header>
     <!-- /.header -->
     <?php include_once("./templates/scheme-block.php")?>
-    <?php include_once("./templates/contracts-block.php")?>
+    <?php 
+    $block_title = "Контрактное производство";
+    include_once("./templates/contracts-block.php")?>
     <?php include_once("./templates/marks-block.php")?>
     <?php include_once("./templates/founder-block.php")?>
     <?php include_once("./templates/clients-block.php")?>

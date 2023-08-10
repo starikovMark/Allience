@@ -838,9 +838,7 @@ html {
 /* Страница about */
 .named {
     padding-top: 8.4375rem;
-    padding-bottom: 3.125rem;
     background-color: #F0F2F5;
-    position: relative;
 }
 .named-primary {
     background-image: url("/img/png/named-bg.jpeg");
@@ -883,9 +881,6 @@ html {
     max-width: 30rem;
     max-height: 15rem;
     object-fit: cover;
-    position: absolute;
-    bottom: 0;
-    right: 10rem;
 }
 .breadcrumb {
     display: flex;
@@ -893,6 +888,7 @@ html {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    margin-bottom: 3.125rem;
 }
 .breadcrumb-item {
     display: flex;
@@ -924,6 +920,35 @@ html {
 }
 .named-primary .breadcrumb-item:after {
     background-color: #fff;
+}
+.seo-title {
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+color: #292D33;
+margin: 0;
+}
+.seo-text {
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 160%;
+color: #828A99;
+margin: .625rem 0 1.25rem 0;
+}
+.seo-link {
+    display: flex;
+    align-items: center;
+    gap: .9375rem;   
+}
+.seo-link-button {
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: 160%;
+text-decoration: none;
+color: #5C8EE5;
 }
 @media (max-width: 1700px) {
     html {
@@ -1004,6 +1029,9 @@ html {
     }
     .cta-form {
       max-width: 52.5rem;
+    }
+    .cta {
+        margin-top: 0;
     }
 }
 @media (max-width: 1026px) {

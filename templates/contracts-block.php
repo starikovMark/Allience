@@ -1,7 +1,11 @@
 <section class="section production">
       <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title">Контрактное производство</h2>
+        <?php 
+        if (!empty($block_title)) {
+          echo '<div class="seporator"></div>';
+          echo '<h2 class="section-title">' . $block_title . '</h2>';
+        };
+        ?>
         <div class="cards">
           <a href="#" class="card">
             <div class="card-content">

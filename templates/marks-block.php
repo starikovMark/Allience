@@ -1,7 +1,11 @@
 <section class="section marks">
       <div class="container">
-        <div class="seporator"></div>
-        <h2 class="section-title">собственные торговые марки</h2>
+        <?php 
+        if (!empty($block_title)) {
+          echo '<div class="seporator"></div>';
+          echo '<h2 class="section-title">' . $block_title . '</h2>';
+        };
+        ?>
         <div class="cards products">
           <div class="card product">
             <svg class="product-image">
