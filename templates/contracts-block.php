@@ -15,7 +15,11 @@
                 оценить значение форм воздействия.
               </p>
             </div>
-            <img src="img/png/metal.png" alt="png: metal" class="card-image" />
+            <picture class="card-image">
+              <source type="image/webp" srcset="img/png/metal.webp">
+              <source type="image/jpeg" srcset="img/png/metal.png">
+              <img src="img/png/metal.png" alt="png: metal" class="card-image">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -25,7 +29,11 @@
                 нанотехнологии функционально разнесены на независимые элементы.
               </p>
             </div>
-            <img src="img/png/losk.png" alt="png: losk" class="card-image" />
+            <picture class="card-image">
+              <source type="image/webp" srcset="img/png/losk.webp">
+              <source type="image/jpeg" srcset="img/png/losk.png">
+              <img src="img/png/losk.png" alt="png: losk" class="card-image">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -34,11 +42,11 @@
                 Лишь интерактивные прототипы призваны к ответу.
               </p>
             </div>
-            <img
-              src="img/png/septarius.png"
-              alt="png: septarius"
-              class="card-image"
-            />
+            <picture class="card-image">
+              <source type="image/webp" srcset="img/png/septarius.webp">
+              <source type="image/jpeg" srcset="img/png/septarius.png">
+              <img src="img/png/septarius.png" alt="png: septarius" class="card-image">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -48,11 +56,11 @@
                 оценить значение форм воздействия.
               </p>
             </div>
-            <img
-              src="img/png/septarius.png"
-              alt="png: septarius"
-              class="card-image"
-            />
+            <picture class="card-image">
+              <source type="image/webp" srcset="img/png/septarius.webp">
+              <source type="image/jpeg" srcset="img/png/septarius.png">
+              <img src="img/png/septarius.png" alt="png: septarius" class="card-image">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -61,7 +69,11 @@
                 Лишь интерактивные прототипы призваны к ответу.
               </p>
             </div>
-            <img src="img/png/metal.png" alt="png: metal" class="card-image" />
+            <picture class="card-image">
+              <source type="image/webp" srcset="img/png/metal.webp">
+              <source type="image/jpeg" srcset="img/png/metal.png">
+              <img src="img/png/metal.png" alt="png: metal" class="card-image">
+            </picture>
           </a>
           <a href="#" class="card">
             <div class="card-content">
@@ -71,7 +83,11 @@
                 нанотехнологии функционально разнесены на независимые элементы.
               </p>
             </div>
-            <img src="img/png/losk.png" alt="png: losk" class="card-image" />
+            <picture class="card-image">
+              <source type="image/webp" srcset="img/png/losk.webp">
+              <source type="image/jpeg" srcset="img/png/losk.png">
+              <img src="img/png/losk.png" alt="png: losk" class="card-image">
+            </picture>
           </a>
         </div>
         <!-- /.cards -->
