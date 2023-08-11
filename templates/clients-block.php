@@ -1,4 +1,4 @@
-<section class="section clients">
+<section class="section clients section-clients">
   <div class="container">
     <div class="seporator"></div>
     <div class="clients-content">
@@ -33,7 +33,7 @@
           </li>
           <li class="clients-text-item">
             <svg class="clients-text-icon">
-              <use href="img/svg/sprites.svg#hand"></use>
+              <use href="img/svg/sprites.svg#aerozol"></use>
             </svg>
             Косметические средства
           </li>
