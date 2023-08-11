@@ -1014,6 +1014,7 @@ color: #5C8EE5;
 .production-image {
     width: 37.5rem;
     height: 46.875rem;
+    object-fit: cover;
 }
 @media (max-width: 1700px) {
     html {
