@@ -1,6 +1,5 @@
 <?php
 $page_title = "О компании";
-$header_image = "display: none";
 include_once("./templates/header-page-block.php") ?>
 <section class="section expert section-expert">
     <div class="container">

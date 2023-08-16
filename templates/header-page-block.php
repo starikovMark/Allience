@@ -181,12 +181,10 @@
             </ul>
           </div>
           <!-- /.named-text -->
-          <picture class="named-image"
-            style="<?= $header_image;?>">
+          <picture class="named-image <?= $header_image;?>">
             <source type="image/webp" srcset="img/png/avto-him.webp">
             <source type="image/jpeg" srcset="img/png/avto-him.png">
-            <img src="img/png/avto-him.png" class="named-image"
-            style="<?= $header_image;?>">
+            <img src="img/png/avto-him.png" class="named-image <?= $header_image;?>">
           </picture>
         </div>
       </div>

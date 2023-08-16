@@ -136,14 +136,8 @@ const swiperBlog = new Swiper(".slider-blog", {
     prevEl: ".primary-buttons-prev",
   },
   breakpoints: {
-    588: {
-      slidesPerView: 2,
-    },
     788: {
       slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 3,
     },
   },
 });

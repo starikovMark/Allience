@@ -195,7 +195,7 @@
         <div class="swiper-wrapper slider-blog-wrapper">
           <!-- Slides -->
           <a href="#" class="swiper-slide blog-card">
-            <picture>
+            <picture class="blog-card-image">
               <source type="image/webp" srcset="img/png/blog-image-1.webp">
               <source type="image/jpeg" srcset="img/png/blog-image-1.jpeg">
               <img src="img/png/blog-image-1.jpeg" alt="jpeg: blog-1" class="blog-card-image" />
@@ -210,7 +210,7 @@
             </p>
           </a>
           <a href="#" class="swiper-slide blog-card">
-            <picture>
+            <picture class="blog-card-image">
               <source type="image/webp" srcset="img/png/blog-image-2.webp">
               <source type="image/jpeg" srcset="img/png/blog-image-2.jpeg">
               <img src="img/png/blog-image-2.jpeg" alt="jpeg: blog-2" class="blog-card-image" />
@@ -225,7 +225,7 @@
             </p>
           </a>
           <a href="#" class="swiper-slide blog-card">
-            <picture>
+            <picture class="blog-card-image">
               <source type="image/webp" srcset="img/png/blog-image-1.webp">
               <source type="image/jpeg" srcset="img/png/blog-image-1.jpeg">
               <img src="img/png/blog-image-1.jpeg" alt="jpeg: blog-1" class="blog-card-image" />
@@ -240,7 +240,7 @@
             </p>
           </a>
           <a href="#" class="swiper-slide blog-card">
-            <picture>
+            <picture class="blog-card-image">
               <source type="image/webp" srcset="img/png/blog-image-2.webp">
               <source type="image/jpeg" srcset="img/png/blog-image-2.jpeg">
               <img src="img/png/blog-image-2.jpeg" alt="jpeg: blog-2" class="blog-card-image" />
