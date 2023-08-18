@@ -1098,6 +1098,33 @@ html {
   height: 100%;
   object-fit: cover;
 }
+.types-title {
+  margin-bottom: 1.25rem;
+}
+.types-text {
+  margin-bottom: 3.125rem;
+  max-width: 52.5rem;
+}
+.types-list {
+  list-style: none;
+  columns: 4 auto;
+  margin: 0;
+  padding: 0;
+}
+.types-list-item {
+  color: #292d33;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  display: flex;
+  gap: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+.types-list-item:before {
+  content: "—";
+  color: #5c8ee5;
+}
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -1426,6 +1453,9 @@ html {
   .manufacture-picture-image {
     width: 100%;
   }
+  .types-list {
+    columns: 2 auto;
+  }
 }
 @media (max-width: 788px) {
   .container {
@@ -1518,6 +1548,9 @@ html {
     min-height: 195px;
   }
   .manufacture-list {
+    columns: auto;
+  }
+  .types-list {
     columns: auto;
   }
 }
