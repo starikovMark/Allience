@@ -258,7 +258,7 @@
         </div>
         <!-- If we need navigation buttons -->
         <div class="blog-slider-footer">
-          <a href="#" class="button-link">Весь блог</a>
+          <a href="./blog.php" class="button-link">Весь блог</a>
           <div class="blog-buttons primary-buttons-wrapper">
             <div class="primary-buttons-prev">
               <svg width="36" height="24">

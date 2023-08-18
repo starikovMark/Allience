@@ -4,6 +4,7 @@ const logoLight = document.querySelector(".logo-light");
 const mMenuToggle = document.querySelector(".navbar-menu-toggle");
 const menu = document.querySelector(".navbar-mobile");
 const isFront = document.body.classList.contains("front-page");
+const numberButton = document.querySelectorAll(".number-item-link");
 const modalButtons = document.querySelectorAll("[data-toggle=modal]");
 let currentModal;
 let modalDialog;
@@ -221,7 +222,9 @@ forms.forEach((form) => {
       ajaxSend(formData);
     });
 });
-
+document.addEventListener("click", (numberButton) => {
+  numberButton.preventDefault();
+});
 /* Создаем префикс +7, даже если вводят 8 или 9 */
 const prefixNumber = (str) => {
   /* если вводят семерку, добавляем ей скобку */
