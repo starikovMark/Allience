@@ -162,4 +162,7 @@ include_once("./templates/header-page-block.php") ?>
     <!-- /.container -->
 </section>
 <!-- /.section types section-types -->
+<?php include_once("./templates/research-block.php") ?>
+<?php include_once("./templates/scheme-block.php") ?>
+<?php include_once("./templates/clients-block.php") ?>
 <?php include_once("footer.php") ?>

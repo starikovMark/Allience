@@ -8,7 +8,7 @@
     ;
     ?>
     <div class="cards products">
-      <div class="card product">
+      <a href="./ag-tech.php" class="card product">
         <svg class="product-image">
           <use href="img/svg/sprites.svg#ag-tech"></use>
         </svg>
@@ -20,8 +20,8 @@
             обществом задач.
           </p>
         </div>
-      </div>
-      <div class="card product">
+      </a>
+      <a href="#" class="card product">
         <svg class="product-image">
           <use href="img/svg/sprites.svg#allience"></use>
         </svg>
@@ -33,7 +33,7 @@
             обществом задач.
           </p>
         </div>
-      </div>
+      </a>
     </div>
     <!-- /.products -->
   </div>
