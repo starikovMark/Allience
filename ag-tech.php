@@ -11,3 +11,4 @@ include_once("./templates/text-page-block.php") ?>
     $button_color = "slider-button-dark";
     include_once("./templates/swiper-block.php") ?>
 </div>
+<?php include_once("./footer.php") ?>
