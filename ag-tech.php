@@ -56,4 +56,7 @@ include_once("./templates/text-page-block.php") ?>
     </div>
 </section>
 <!-- /.section distributor section distributor -->
+<?php include_once("./templates/research-block.php") ?>
+<?php include_once("./templates/scheme-block.php") ?>
+<?php include_once("./templates/clients-block.php") ?>
 <?php include_once("./footer.php") ?>
