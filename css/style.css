@@ -1138,6 +1138,9 @@ html {
   background-size: 150%;
   background-position-x: -10rem;
 }
+.distributor-title {
+  margin-bottom: 1.25rem;
+}
 .distributor-button {
   margin-top: 1.875rem;
 }
@@ -1472,6 +1475,15 @@ html {
   .types-list {
     columns: 2 auto;
   }
+  .distributor {
+    padding: 6.25rem 0 30.25rem 0;
+    background-position-x: 100%;
+    background-position-y: 36rem;
+    background-repeat: no-repeat;
+  }
+  .distributor-wrapper {
+    max-width: 100%;
+  }
 }
 @media (max-width: 788px) {
   .container {
@@ -1568,6 +1580,16 @@ html {
   }
   .types-list {
     columns: auto;
+  }
+  .distributor {
+    padding: 6.25rem 0 28.25rem 0;
+    background-position-x: 60%;
+    background-position-y: 44rem;
+    background-repeat: no-repeat;
+    background-size: 265%;
+  }
+  .distributor-button {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
