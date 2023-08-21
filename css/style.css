@@ -1172,6 +1172,95 @@ html {
   border: 1px solid #5c8ee5;
   color: #5c8ee5;
 }
+.article-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.share-title {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  color: #828a99;
+  margin: 0;
+  margin-bottom: 1.25rem;
+}
+.share-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.625rem;
+}
+.share-list-item {
+  padding: 0.8125rem;
+  border: 1px solid #ebebf0;
+  transition: border 0.2s;
+}
+.share-list-item:hover {
+  border: 1px solid #5c8ee5;
+}
+.article-blog {
+  max-width: 70%;
+  color: #292d33;
+}
+.article-blog-title {
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0;
+  margin-bottom: 1.25rem;
+}
+.article-blog-text {
+  margin: 0;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+.article-blog-subtitle {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 3.125rem 0 1.25rem 0;
+}
+.article-blog-image {
+  position: relative;
+  width: 100%;
+  max-height: 34.375rem;
+  object-fit: cover;
+  margin-top: 1.25rem;
+}
+.article-blog-list-title {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 3.125rem 0 1.25rem 0;
+}
+.article-blog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.article-blog-list-item {
+  display: flex;
+  gap: 0.625rem;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-top: 0.625rem;
+}
+.article-blog-list-item:before {
+  content: "—";
+  color: #5c8ee5;
+}
+.button-link-visible {
+  display: none;
+}
 @media (max-width: 1700px) {
   html {
     font-size: 14px;
@@ -1511,6 +1600,15 @@ html {
   }
   .distributor-wrapper {
     max-width: 100%;
+  }
+  .article-wrapper {
+    flex-direction: column-reverse;
+  }
+  .article-blog {
+    max-width: 100%;
+  }
+  .share {
+    margin-top: 3.125rem;
   }
 }
 @media (max-width: 788px) {
