@@ -72,7 +72,7 @@
           <a href="#" class="navbar-mobile-link">Новости</a>
         </li>
         <li class="navbar-mobile-item">
-          <a href="#" class="navbar-mobile-link">Контакты</a>
+          <a href="./contacts.php" class="navbar-mobile-link">Контакты</a>
         </li>
       </ul>
       <div class="navbar-mobile-info">
@@ -140,7 +140,7 @@
           <a href="#" class="navbar-menu-link">Новости</a>
         </li>
         <li class="navbar-menu-item">
-          <a href="#" class="navbar-menu-link">Контакты</a>
+          <a href="./contacts.php" class="navbar-menu-link">Контакты</a>
         </li>
       </ul>
       <div class="navbar-phone">

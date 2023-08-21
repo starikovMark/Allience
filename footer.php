@@ -132,7 +132,7 @@
             <a href="#" class="footer-menu-link footer-menu-link-bold">Новости</a>
           </li>
           <li class="footer-menu-item footer-menu-item-bold">
-            <a href="#" class="footer-menu-link footer-menu-link-bold">Контакты</a>
+            <a href="./contacts.php" class="footer-menu-link footer-menu-link-bold">Контакты</a>
           </li>
         </ul>
       </div>

@@ -34,7 +34,7 @@ include_once("./templates/header-page-block.php") ?>
                     высокотехнологичная...
                 </p>
             </a>
-            <a href="#" class="blog-card">
+            <a href="./blog-methodology.php" class="blog-card">
                 <picture class="blog-card-image">
                     <source type="image/webp" srcset="img/png/blog-image-1.webp">
                     <source type="image/jpeg" srcset="img/png/blog-image-1.jpeg">
@@ -64,7 +64,7 @@ include_once("./templates/header-page-block.php") ?>
                     высокотехнологичная...
                 </p>
             </a>
-            <a href="#" class="blog-card">
+            <a href="./blog-methodology.php" class="blog-card">
                 <picture class="blog-card-image">
                     <source type="image/webp" srcset="img/png/blog-image-1.webp">
                     <source type="image/jpeg" srcset="img/png/blog-image-1.jpeg">
@@ -94,7 +94,7 @@ include_once("./templates/header-page-block.php") ?>
                     высокотехнологичная...
                 </p>
             </a>
-            <a href="#" class="blog-card">
+            <a href="./blog-methodology.php" class="blog-card">
                 <picture class="blog-card-image">
                     <source type="image/webp" srcset="img/png/blog-image-1.webp">
                     <source type="image/jpeg" srcset="img/png/blog-image-1.jpeg">
@@ -124,7 +124,7 @@ include_once("./templates/header-page-block.php") ?>
                     высокотехнологичная...
                 </p>
             </a>
-            <a href="#" class="blog-card">
+            <a href="./blog-methodology.php" class="blog-card">
                 <picture class="blog-card-image">
                     <source type="image/webp" srcset="img/png/blog-image-1.webp">
                     <source type="image/jpeg" srcset="img/png/blog-image-1.jpeg">
