@@ -29,27 +29,27 @@
               </a>
             </li>
             <li class="navbar-mobile-subtitle-item">
-              <a href="#" class="navbar-mobile-subtitle-link">
+              <a href="./not-found.php" class="navbar-mobile-subtitle-link">
                 Бытовая химия
               </a>
             </li>
             <li class="navbar-mobile-subtitle-item">
-              <a href="#" class="navbar-mobile-subtitle-link">
+              <a href="./not-found.php" class="navbar-mobile-subtitle-link">
                 Дезинфицирующие средства
               </a>
             </li>
             <li class="navbar-mobile-subtitle-item">
-              <a href="#" class="navbar-mobile-subtitle-link">
+              <a href="./not-found.php" class="navbar-mobile-subtitle-link">
                 Пищевые аэрозоли
               </a>
             </li>
             <li class="navbar-mobile-subtitle-item">
-              <a href="#" class="navbar-mobile-subtitle-link">
+              <a href="./not-found.php" class="navbar-mobile-subtitle-link">
                 Косметическая продукция
               </a>
             </li>
             <li class="navbar-mobile-subtitle-item">
-              <a href="#" class="navbar-mobile-subtitle-link">
+              <a href="./not-found.php" class="navbar-mobile-subtitle-link">
                 Краски аэрозольные
               </a>
             </li>
@@ -59,17 +59,17 @@
           <a href="./marks.php" class="navbar-mobile-link">Собственные торговые марки</a>
           <ul class="navbar-mobile-subtitle">
             <li class="navbar-mobile-subtitle-item">
-              <a href="#" class="navbar-mobile-subtitle-link">
+              <a href="./ag-tech.php" class="navbar-mobile-subtitle-link">
                 Автохимия AG-Tech
               </a>
             </li>
             <li class="navbar-mobile-subtitle-item">
-              <a href="#" class="navbar-mobile-subtitle-link"> Автохимия AP </a>
+              <a href="./not-found.php" class="navbar-mobile-subtitle-link"> Автохимия AP </a>
             </li>
           </ul>
         </li>
         <li class="navbar-mobile-item">
-          <a href="#" class="navbar-mobile-link">Новости</a>
+          <a href="./not-found.php" class="navbar-mobile-link">Новости</a>
         </li>
         <li class="navbar-mobile-item">
           <a href="./contacts.php" class="navbar-mobile-link">Контакты</a>
@@ -98,12 +98,12 @@
           </li>
         </ul>
         <div class="navbar-mobile-social">
-          <a href="#" class="navbar-mobile-social-link">
+          <a href="./not-found.php" class="navbar-mobile-social-link">
             <svg class="navbar-mobile-icon" width="24" height="24">
               <use href="img/svg/sprites.svg#vk"></use>
             </svg>
           </a>
-          <a href="#" class="navbar-mobile-social-link">
+          <a href="./not-found.php" class="navbar-mobile-social-link">
             <svg class="navbar-mobile-icon" width="24" height="24">
               <use href="img/svg/sprites.svg#inst"></use>
             </svg>
@@ -137,7 +137,7 @@
           <a href="./marks.php" class="navbar-menu-link">Собственные торговые марки</a>
         </li>
         <li class="navbar-menu-item">
-          <a href="#" class="navbar-menu-link">Новости</a>
+          <a href="./not-found.php" class="navbar-menu-link">Новости</a>
         </li>
         <li class="navbar-menu-item">
           <a href="./contacts.php" class="navbar-menu-link">Контакты</a>

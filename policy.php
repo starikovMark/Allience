@@ -49,4 +49,6 @@ include_once("./templates/header-page-block.php") ?>
     <!-- /.container -->
 </section>
 <!-- /.section policy section-policy -->
-<?php include_once("./footer.php") ?>
+<?php
+$cta_display = "cta-display";
+include_once("./footer.php") ?>

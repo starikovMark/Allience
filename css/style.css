@@ -940,6 +940,9 @@ html {
   font-weight: 400;
   line-height: 160%;
 }
+.display-none {
+  display: none;
+}
 .named .breadcrumb-item-link-active {
   color: #292d33;
 }
@@ -1276,6 +1279,53 @@ html {
   margin-top: 7.5rem;
   width: 100%;
   height: 37.5rem;
+}
+.cta-display {
+  display: none;
+}
+.error {
+  padding: 9.375rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error-number {
+  color: #5c8ee5;
+  font-family: "Bebas Neue Regular";
+  font-size: 18.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+.error-title {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: center;
+  margin: 0;
+}
+.error-text {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292d33;
+  margin: 0;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+.error-button {
+  max-width: 18.875rem;
+  text-decoration: none;
+  margin-top: 1.875rem;
+}
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  align-items: center;
 }
 @media (max-width: 1700px) {
   html {
